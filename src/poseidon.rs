@@ -1,5 +1,5 @@
 use crate::{Spec, State};
-use halo2curves::group::ff::{FromUniformBytes, PrimeField};
+use halo2curves_axiom::group::ff::{FromUniformBytes, PrimeField};
 
 /// Poseidon hasher that maintains state and inputs and yields single element
 /// output when desired
@@ -72,8 +72,8 @@ impl<F: FromUniformBytes<64>, const T: usize, const RATE: usize> Poseidon<F, T, 
 #[cfg(test)]
 mod tests {
     use crate::{Poseidon, State};
-    use halo2curves::bn256::Fr;
-    use halo2curves::group::ff::Field;
+    use halo2curves_axiom::bn256::Fr;
+    use halo2curves_axiom::group::ff::Field;
     use paste::paste;
     use rand_core::OsRng;
 

@@ -6,7 +6,8 @@ edition = "2021"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-halo2curves = "0.6.0"
+#halo2curves_axiom = "0.6.0"
+halo2curves-axiom = "0.5.1"
 subtle = { version = "2.3", default-features = false }
 
 [dev-dependencies]
